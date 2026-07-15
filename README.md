@@ -66,7 +66,10 @@ bash anigen/4drecon/run.sh --video clip.mp4                # or:  --frames frame
 
 `--video`/`--frames` is the input; `--mask` is an optional foreground mask (video or image folder) — without it, masks are produced automatically by SAM3 (`--prompt` text). This is an optional add-on under [`anigen/4drecon/`](anigen/4drecon/README.md); its dependencies and third-party checkouts (VGGT-Omega, LoMa) are installed separately (see that README).
 
-### **Application**: Video Editing (re-animate & recompose)
+### **Application**: Video Editing (motion-editing & recompose)
+
+> [!TIP]
+> _The current video editing tool is a preview version. We are developing another video editing research that supports **non-rigid motion editing**, 6DoF trajectory editing, scaling, duplication, deletion, and camera re-shooting. **Stay tuned for the official release!**_
 
 Take a fitted asset, give it a **new motion** and **new camera**. Rendered by **VACE** (Wan2.2-VACE-Fun-A14B).
 
